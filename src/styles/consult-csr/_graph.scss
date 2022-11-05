@@ -1,0 +1,30 @@
+@use "../variables";
+
+.graph {
+  background-color: variables.$white;
+  padding: 25px;
+  border-radius: variables.$rounded-corners;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .graph-stats {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+}
+
+@media screen and (min-width: variables.$large) {
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+}

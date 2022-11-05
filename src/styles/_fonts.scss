@@ -1,0 +1,94 @@
+/* Metropolis Regular */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/src/assets/fonts/metropolis/metropolis-regular-webfont.woff");
+  src: url("/src/assets/fonts/metropolis/metropolis-regular-webfont.woff")
+      format("woff"),
+    url("/src/assets/fonts/metropolis/metropolis-regular-webfont.woff2")
+      format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Metropolis Regular Italic */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/src/assets/fonts/metropolis/metropolis-regularitalic-webfont.woff");
+  src: url("/src/assets/fonts/metropolis/metropolis-regularitalic-webfont.woff")
+      format("woff"),
+    url("/src/assets/fonts/metropolis/metropolis-regularitalic-webfont.woff2")
+      format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Metropolis Medium */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/src/assets/fonts/metropolis/metropolis-medium-webfont.woff");
+  src: url("/src/assets/fonts/metropolis/metropolis-medium-webfont.woff")
+      format("woff"),
+    url("/src/assets/fonts/metropolis/metropolis-medium-webfont.woff2")
+      format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Metropolis Medium Italic */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/src/assets/fonts/metropolis/metropolis-medium-webfont.woff");
+  src: url("/src/assets/fonts/metropolis/metropolis-mediumitalic-webfont.woff")
+      format("woff"),
+    url("/src/assets/fonts/metropolis/metropolis-mediumitalic-webfont.woff2")
+      format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Metropolis SemiBold */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/src/assets/fonts/metropolis/metropolis-semibold-webfont.woff");
+  src: url("/src/assets/fonts/metropolis/metropolis-semibold-webfont.woff")
+      format("woff"),
+    url("/src/assets/fonts/metropolis/metropolis-semibold-webfont.woff2")
+      format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Metropolis SemiBold Italic */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/src/assets/fonts/metropolis/metropolis-semibolditalic-webfont.woff");
+  src: url("/src/assets/fonts/metropolis/metropolis-semibolditalic-webfont.woff")
+      format("woff"),
+    url("/src/assets/fonts/metropolis/metropolis-semibolditalic-webfont.woff2")
+      format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Metropolis Bold */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/src/assets/fonts/metropolis/metropolis-bold-webfont.woff");
+  src: url("/src/assets/fonts/metropolis/metropolis-bold-webfont.woff")
+      format("woff"),
+    url("/src/assets/fonts/metropolis/metropolis-bold-webfont.woff2")
+      format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Metropolis SemiBold Italic */
+@font-face {
+  font-family: "Metropolis";
+  src: url("/src/assets/fonts/metropolis/metropolis-bolditalic-webfont.woff");
+  src: url("/src/assets/fonts/metropolis/metropolis-bolditalic-webfont.woff")
+      format("woff"),
+    url("/src/assets/fonts/metropolis/metropolis-bolditalic-webfont.woff2")
+      format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}

@@ -1,0 +1,68 @@
+@use "../variables";
+
+.create-dashboard-category-list {
+  overflow-x: scroll;
+
+  display: flex;
+  gap: variables.$gap-sm;
+  padding: variables.$padding-sm;
+  margin: 0px variables.$margin-sm variables.$margin-lg variables.$margin-sm;
+
+  background-color: variables.$white;
+  border-radius: variables.$rounded-corners;
+}
+
+.category-button-create-template {
+  font-family: variables.$font-stack;
+  font-size: variables.$font-size-sm;
+  font-weight: bold;
+  text-align: center;
+
+  color: variables.$dark-blue;
+  background-color: variables.$lighter-gray;
+  border-radius: variables.$rounded-corners;
+
+  min-width: 125px;
+  height: variables.$nav-height-sm;
+
+  border: none;
+  outline: none;
+
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    background-color: rgb(211, 211, 211);
+  }
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .create-dashboard-category-list {
+    gap: variables.$gap-md;
+    padding: variables.$padding-md;
+    margin: 0px variables.$margin-md variables.$margin-lg variables.$margin-md;
+  }
+
+  .category-button-create-template {
+    font-size: variables.$font-size-md;
+    height: variables.$nav-height-md;
+    min-width: 150px;
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+  .create-dashboard-category-list {
+    margin: 0px variables.$margin-lg variables.$margin-xl variables.$margin-lg;
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .create-dashboard-category-list {
+    margin: auto;
+    margin-bottom: variables.$margin-xl;
+  }
+}

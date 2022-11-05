@@ -1,0 +1,60 @@
+@use "../variables";
+
+.category-card {
+  .mvo-section {
+    display: grid;
+    width: 100%;
+    grid-gap: 24px;
+    padding: 24px;
+  }
+
+  .category-title-section {
+    flex: 1;
+    height: 100%;
+    padding: 0px variables.$padding-md;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.category-title {
+  font-size: variables.$font-size-title-sm;
+  color: variables.$dark-blue;
+}
+
+.csr-card-in-category {
+  background-color: variables.$lighter-gray;
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .category-card {
+    .category-title-section {
+      padding: 0px variables.$padding-lg;
+    }
+  }
+
+  .category-title {
+    font-size: variables.$font-size-title-md;
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .category-card {
+    .category-title-section {
+      padding: 0px variables.$padding-xl;
+    }
+  }
+  .category-title {
+    font-size: variables.$font-size-title-lg;
+  }
+}

@@ -1,0 +1,73 @@
+@use "../variables";
+
+.card {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: variables.$rounded-corners;
+  transition: all 0.1s ease-out;
+
+  &.selected-card {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.selected-card {
+  position: relative;
+  bottom: calc(variables.$gap-sm / 2 + 1px);
+}
+
+.under-card {
+  width: 100%;
+  height: 100%;
+  background: variables.$blue;
+  border-radius: variables.$rounded-corners;
+}
+
+.icon-bottom {
+  position: absolute;
+  bottom: variables.$padding-md;
+  right: variables.$padding-md;
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .card {
+    &:hover {
+      transform: translateY(calc(-1 *#{variables.$gap-md} + 3px));
+    }
+  }
+
+  .selected-card {
+    bottom: calc(#{variables.$gap-md} - 3px);
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .icon-bottom {
+    position: absolute;
+    bottom: variables.$padding-lg;
+    right: variables.$padding-lg;
+  }
+
+  .card {
+    &:hover {
+      transform: translateY(calc(-1 *#{variables.$gap-lg} + 6px));
+    }
+  }
+
+  .selected-card {
+    bottom: calc(#{variables.$gap-lg} - 6px);
+  }
+}

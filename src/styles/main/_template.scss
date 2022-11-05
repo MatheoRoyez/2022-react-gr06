@@ -1,0 +1,66 @@
+@use "../variables";
+
+// 5. Template.
+.mvo-info-template {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: variables.$card-height-sm;
+  margin: 0px variables.$margin-sm;
+  gap: variables.$gap-sm;
+
+  user-select: none;
+  display: grid;
+}
+
+.template {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: variables.$card-height-sm;
+  margin: 0px variables.$margin-sm;
+  gap: variables.$gap-sm;
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .template {
+    grid-auto-rows: variables.$card-height-md;
+    margin: 0px variables.$margin-md;
+    gap: variables.$gap-md;
+  }
+
+  .mvo-info-template {
+    grid-auto-rows: variables.$card-height-md;
+    margin: 0px variables.$margin-md;
+    gap: variables.$gap-md;
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+  .template {
+    grid-auto-rows: variables.$card-height-lg;
+    margin: 0px variables.$margin-lg;
+  }
+
+  .mvo-info-template {
+    grid-auto-rows: variables.$card-height-lg;
+    margin: 0px variables.$margin-lg;
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .template {
+    grid-auto-rows: variables.$card-height-xl;
+    margin: 0px;
+    gap: variables.$gap-lg;
+  }
+
+  .mvo-info-template {
+    grid-auto-rows: variables.$card-height-xl;
+    margin: 0px;
+    gap: variables.$gap-lg;
+  }
+}

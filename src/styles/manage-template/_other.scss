@@ -1,0 +1,121 @@
+@use "../variables";
+
+.mini-card {
+  background-color: gray;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.csr-title-v2 {
+  font-size: 2rem;
+  color: "#004c69";
+}
+
+.mini-csr-title {
+  font-size: 1.2rem;
+  color: #004c69;
+}
+
+.mini-csr-card {
+  padding: 0px;
+  background-color: red;
+}
+
+.button-full {
+  width: 100%;
+}
+
+.buttongroup {
+  margin-top: 100px;
+  display: grid;
+  gap: 25px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+// 5A - Manage and create template.
+.role-info {
+  color: #7fa5b4;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #efefef;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #f59c00;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* on state - toggle switch */
+input:checked + .slider:before {
+  background-color: #b2d235;
+}
+
+input:checked + .slider {
+  background-color: #efefef;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle {
+  right: 20px;
+  bottom: 16px;
+}
+
+.option-title {
+  font-size: 1.5rem;
+  color: #7fa5b4;
+}
+
+.roles {
+  padding-bottom: 60px;
+}
+
+.options {
+  padding-bottom: 60px;
+}

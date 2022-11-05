@@ -1,0 +1,58 @@
+@use "../variables";
+
+.error-pane {
+  user-select: none;
+  height: 50vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  // margin-top: 50px;
+  margin: 0px variables.$margin-sm;
+  gap: variables.$gap-sm;
+
+  .error-title {
+    color: variables.$dark-blue;
+    font-size: variables.$font-size-title-sm;
+    // font-size: 2.5rem;
+  }
+
+  .error-description {
+    color: variables.$blue;
+    font-size: variables.$font-size-md;
+    // font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .error-pane {
+    margin: 0px variables.$margin-md;
+    gap: variables.$gap-md;
+
+    .error-title {
+      color: variables.$dark-blue;
+      font-size: variables.$font-size-title-lg;
+    }
+
+    .error-description {
+      color: variables.$blue;
+      font-size: variables.$font-size-title-ty;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+  .error-pane {
+    margin: 0px variables.$margin-lg;
+    gap: variables.$gap-lg;
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+}

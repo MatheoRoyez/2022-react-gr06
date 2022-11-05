@@ -1,0 +1,97 @@
+@use "../variables";
+
+.textarea_datasource {
+  font-family: variables.$font-stack;
+  font-size: variables.$font-size-ty;
+  color: variables.$dark-blue;
+
+  border: none;
+  outline: none;
+  width: 100%;
+
+  border-radius: variables.$rounded-corners-icon;
+  padding: variables.$padding-sm;
+}
+
+.goBackbtn {
+  font-family: variables.$font-stack;
+  font-weight: bold;
+  font-size: variables.$font-size-sm;
+
+  height: variables.$nav-height-sm;
+  padding: 0px variables.$padding-md;
+
+  border: none;
+  background-color: variables.$orange;
+  color: variables.$dark-blue;
+  border-radius: variables.$rounded-corners-icon;
+
+  cursor: pointer;
+}
+
+.datasource-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  height: max-content;
+
+  padding: 0px variables.$padding-sm;
+  margin-bottom: variables.$gap-sm;
+  gap: variables.$gap-md;
+}
+
+.btn_goback_hover {
+  background-color: variables.$blue;
+  border-radius: variables.$rounded-corners-icon;
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .datasource-details {
+    padding: 0px variables.$padding-md;
+    margin-bottom: variables.$gap-md;
+    gap: variables.$gap-lg;
+  }
+
+  .textarea_datasource {
+    padding: variables.$padding-md;
+  }
+
+  .goBackbtn {
+    height: variables.$nav-height-md;
+    font-size: variables.$font-size-md;
+    padding: 0px variables.$padding-lg;
+
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+.div_btn_goback {
+  margin-left: auto;
+}
+
+@media screen and (min-width: variables.$large) {
+  .datasource-details {
+    padding: 0px variables.$padding-lg;
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+  .textarea_datasource {
+    padding: variables.$padding-lg;
+    font-size: variables.$font-size-sm;
+  }
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .datasource-details {
+    padding: 0px;
+    margin-bottom: variables.$gap-lg;
+  }
+}

@@ -1,0 +1,60 @@
+@use "../variables";
+
+.breadcrumb-trail {
+  background-color: variables.$breadcrumb-blue;
+  margin-inline: auto;
+
+  padding: variables.$padding-md 20px;
+  margin: 0px variables.$margin-sm variables.$margin-lg variables.$margin-sm;
+  border-radius: variables.$rounded-corners;
+  max-width: variables.$two-extra-large;
+
+  .breadcrumb-item {
+    font-weight: bold;
+    color: variables.$dark-blue;
+    cursor: pointer;
+    position: relative;
+    padding-inline: 10px;
+  }
+
+  .breadcrumb-item:hover {
+    color: variables.$blue;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: variables.$blue;
+  }
+
+  .breadcrumb-item::after {
+    content: " / ";
+    position: absolute;
+    right: -5px;
+    color: variables.$dark-blue;
+  }
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .breadcrumb-trail {
+    font-size: variables.$font-size-md;
+    margin: 0px variables.$margin-md variables.$margin-lg variables.$margin-md;
+    padding: 18px variables.$padding-lg;
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+  .breadcrumb-trail {
+    margin: 0px variables.$margin-lg variables.$margin-xl variables.$margin-lg;
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .breadcrumb-trail {
+    margin: auto;
+    margin-bottom: variables.$margin-xl;
+  }
+}

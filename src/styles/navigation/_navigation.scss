@@ -1,0 +1,136 @@
+@use "../variables";
+
+header {
+  max-width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  padding: variables.$padding-md 8px;
+}
+
+.nav-icon {
+  width: variables.$nav-height-sm;
+  aspect-ratio: 1/1;
+}
+
+i {
+  display: inline-block;
+  padding-left: variables.$padding-sm;
+}
+
+nav {
+  width: 100vw;
+  height: variables.$nav-height-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  .elements {
+    height: 100%;
+    width: 100%;
+    max-width: variables.$two-extra-large;
+    display: flex;
+    gap: variables.$gap-sm;
+
+    .nav-text-link {
+      align-items: center;
+      height: 100%;
+
+      font-weight: bold;
+      color: variables.$blue;
+      text-decoration: none;
+      border: none;
+      padding: 12px 32px;
+
+      &:hover {
+        background-color: variables.$white;
+        border-radius: variables.$rounded-corners;
+
+        &.selected {
+          background-color: variables.$light-blue;
+        }
+      }
+      &.selected {
+        color: variables.$dark-blue;
+        text-decoration: underline variables.$lime 3px;
+        text-underline-position: under;
+      }
+    }
+
+    > .fluvius-name {
+      font-weight: bold;
+      color: variables.$dark-blue;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      padding-left: variables.$padding-sm;
+    }
+  }
+
+  #fluvius_icon {
+    padding: 0px;
+
+    &:hover {
+      background-color: variables.$light-blue;
+    }
+
+    align-items: center;
+  }
+}
+
+// Only display username on narrow screen.
+.nav-text-link {
+  display: none;
+}
+
+.nav-user-main {
+  flex-grow: 0;
+
+  .nav-text-link {
+    font-size: variables.$font-size-sm; // Bug: No inherentance.
+    font-family: variables.$font-stack;
+    display: flex;
+    height: 100%;
+    background-color: variables.$light-blue;
+  }
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  header {
+    padding: 18px variables.$padding-lg;
+  }
+
+  nav {
+    height: variables.$nav-height-md;
+  }
+
+  .nav-icon {
+    width: variables.$nav-height-md;
+  }
+
+  .nav-text-link {
+    display: flex;
+  }
+
+  .nav-user-main {
+    .nav-text-link {
+      font-size: variables.$font-size-md;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+  header {
+    padding: variables.$padding-lg variables.$padding-lg;
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+}

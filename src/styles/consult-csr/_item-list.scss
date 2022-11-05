@@ -1,0 +1,67 @@
+@use "../variables";
+
+.itemlist {
+  margin: 0px variables.$margin-sm;
+
+  .itemlist-name {
+    font-size: variables.$font-size-title-ty;
+    color: variables.$blue;
+    padding-top: variables.$padding-xl;
+  }
+
+  .item-list-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: variables.$card-height-sm;
+    gap: variables.$gap-sm;
+    padding-top: variables.$gap-sm;
+  }
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .itemlist {
+    margin: 0px variables.$margin-md;
+
+    .itemlist-name {
+      font-size: variables.$font-size-title-sm;
+    }
+
+    .item-list-items {
+      grid-auto-rows: variables.$card-height-md;
+      gap: variables.$gap-md;
+      padding-top: variables.$gap-md;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+  .itemlist {
+    margin: 0px variables.$margin-lg;
+
+    .itemlist-name {
+      font-size: variables.$font-size-title-md;
+    }
+
+    .item-list-items {
+      grid-auto-rows: variables.$card-height-lg;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .itemlist {
+    margin: 0px;
+
+    .item-list-items {
+      grid-auto-rows: variables.$card-height-xl;
+      gap: variables.$gap-lg;
+      padding-top: variables.$gap-lg;
+    }
+  }
+}

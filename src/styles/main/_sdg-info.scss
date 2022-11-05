@@ -1,0 +1,128 @@
+@use "../variables";
+
+.sdg-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 999;
+  position: relative;
+
+  padding: variables.$padding-lg;
+  margin: 0px variables.$margin-sm;
+  border-radius: variables.$rounded-corners;
+
+  cursor: pointer;
+  user-select: none;
+
+  max-width: 800px;
+  min-height: 65%;
+  color: variables.$white;
+
+  transition: all 0.3s ease-out;
+
+  .close {
+    position: absolute;
+    right: variables.$padding-lg;
+    top: variables.$padding-md;
+    transform: rotate(45deg);
+    font-size: 2rem;
+  }
+
+  .sdg-info-title {
+    font-weight: bold;
+    color: variables.$white;
+    font-size: variables.$font-size-title-ty;
+  }
+
+  .sdg-info-desc {
+    color: variables.$white;
+    font-size: variables.$font-size-sm;
+  }
+
+  .sdg-info-details {
+    font-weight: 500;
+  }
+
+  .subsdg-options {
+    color: variables.$white;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: variables.$gap-sm;
+
+    .subsdg-button {
+      padding: 15px;
+      border-radius: variables.$rounded-corners;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+.sdg-info-back {
+  position: fixed;
+  z-index: 10000;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(161, 252, 255, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.sdg-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  user-select: none;
+}
+
+.link-nodeco {
+  text-decoration: none;
+  color: black;
+}
+
+.selectedSub {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .sdg-info {
+    .sdg-info-title {
+      font-size: variables.$font-size-title-sm;
+    }
+
+    .sdg-info-desc {
+      font-size: variables.$font-size-md;
+    }
+
+    .subsdg-options {
+      gap: variables.$gap-md;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .sdg-info {
+    width: 900px;
+    padding: variables.$padding-xl;
+    .sdg-info-title {
+      font-size: variables.$font-size-title-md;
+    }
+  }
+}

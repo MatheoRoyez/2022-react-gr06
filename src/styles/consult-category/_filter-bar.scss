@@ -1,0 +1,64 @@
+@use "../variables";
+
+.filter-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 0px variables.$padding-sm;
+  margin-bottom: variables.$gap-sm;
+  gap: variables.$gap-sm;
+
+  .filter-sdg {
+    font-family: variables.$font-stack;
+    font-weight: bold;
+    font-size: variables.$font-size-sm;
+
+    height: variables.$nav-height-sm;
+    padding: 0px variables.$padding-md;
+
+    border: none;
+    background-color: variables.$white;
+    color: variables.$blue;
+    border-radius: variables.$rounded-corners-icon;
+  }
+
+  .filter-title {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .filter-top {
+    padding: 0px variables.$padding-md;
+    margin-bottom: variables.$gap-md;
+
+    .filter-sdg {
+      height: variables.$nav-height-md;
+      font-size: variables.$font-size-md;
+      padding: 0px variables.$padding-lg;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+  .filter-top {
+    padding: 0px variables.$padding-lg;
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .filter-top {
+    padding: 0px;
+    margin-bottom: variables.$gap-lg;
+  }
+}

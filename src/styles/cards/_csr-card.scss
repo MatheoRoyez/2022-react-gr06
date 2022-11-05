@@ -1,0 +1,113 @@
+@use "../variables";
+
+.csr-card {
+  padding: 0px variables.$padding-md;
+  padding-top: calc(variables.$card-height-sm / 6);
+  position: relative;
+
+  .sdg-number-csr-card {
+    font-weight: bold;
+
+    position: absolute;
+    left: variables.$padding-md;
+    bottom: variables.$padding-md;
+    color: variables.$blue;
+    font-size: variables.$font-size-sdg-icon-sm;
+  }
+
+  .csr-title {
+    color: variables.$dark-blue;
+    font-size: variables.$font-size-csr-sm;
+    font-weight: bold;
+  }
+
+  .csr-unit {
+    font-size: 0.8rem;
+    color: variables.$dark-blue;
+    margin-bottom: 42px;
+    font-weight: bold;
+    opacity: 0.5;
+  }
+
+  .csr-value {
+    margin-top: variables.$margin-xl;
+    color: variables.$dark-blue;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 8px;
+
+    > p {
+      font-size: variables.$font-size-ty;
+    }
+  }
+}
+
+.csrcomplete {
+  border-left: 3px solid variables.$lime;
+}
+
+.csruncomplete {
+  border-left: 3px solid variables.$orange;
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .csr-card {
+    padding: 0px variables.$padding-lg;
+    padding-top: calc(variables.$card-height-md / 6);
+
+    .sdg-number-csr-card {
+      font-size: variables.$font-size-sdg-icon-md;
+    }
+
+    .csr-title {
+      font-size: variables.$font-size-csr-md;
+    }
+
+    .csr-value > p {
+      font-size: variables.$font-size-sm;
+    }
+  }
+
+  .csrcomplete {
+    border-left: 4px solid variables.$lime;
+  }
+
+  .csruncomplete {
+    border-left: 4px solid variables.$orange;
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+}
+
+@media screen and (min-width: variables.$extra-large) {
+  .csr-card {
+    .csr-title {
+      font-size: variables.$font-size-csr-lg;
+    }
+
+    .csr-value > p {
+      font-size: variables.$font-size-md;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .csr-card {
+    padding: 0px variables.$padding-xl;
+    padding-top: calc(variables.$card-height-xl / 6);
+
+    .csr-title {
+      font-size: variables.$font-size-csr-xl;
+    }
+
+    .sdg-number-csr-card {
+      left: variables.$padding-lg;
+      bottom: variables.$padding-lg;
+    }
+  }
+}

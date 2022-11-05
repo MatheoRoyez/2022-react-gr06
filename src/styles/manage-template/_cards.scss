@@ -1,0 +1,59 @@
+@use "../variables";
+
+.update-template {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-add-category-assigned {
+  font-family: variables.$font-stack;
+  font-size: variables.$font-size-title-sm;
+  text-align: left;
+
+  background-color: variables.$white;
+  color: variables.$gray;
+  padding: 0px variables.$padding-md;
+
+  border: none;
+  border-radius: variables.$rounded-corners;
+
+  cursor: pointer;
+}
+
+.grid-add-category-default {
+  font-family: variables.$font-stack;
+  font-weight: bold;
+  font-size: 5rem;
+
+  background-color: variables.$white;
+  color: variables.$lighter-gray;
+  border: none;
+  border-radius: variables.$rounded-corners;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .grid-add-category-assigned {
+    font-size: variables.$font-size-title-md;
+    padding: 0px variables.$padding-lg;
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+  .update-template {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .grid-add-category-assigned {
+    font-size: variables.$font-size-title-lg;
+    padding: 0px variables.$padding-xl;
+  }
+}

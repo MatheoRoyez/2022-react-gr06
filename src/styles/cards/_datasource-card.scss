@@ -1,0 +1,55 @@
+@use "../variables";
+
+.datasource-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px variables.$padding-md;
+  padding-top: calc(variables.$card-height-sm / 6);
+
+  .datasource-title {
+    color: variables.$dark-blue;
+    font-size: variables.$font-size-csr-sm;
+    font-weight: bold;
+  }
+  .datasource-source {
+    font-size: 1rem;
+    font-weight: 500;
+    color: variables.$blue;
+  }
+}
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .datasource-card {
+    padding: 0px variables.$padding-lg;
+    padding-top: calc(variables.$card-height-md / 6);
+
+    .datasource-title {
+      font-size: variables.$font-size-csr-md;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+}
+
+@media screen and (min-width: variables.$extra-large) {
+  .datasource-card {
+    .datasource-title {
+      font-size: variables.$font-size-csr-lg;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .datasource-card {
+    padding: 0px variables.$padding-xl;
+    padding-top: calc(variables.$card-height-xl / 6);
+
+    .datasource-title {
+      font-size: variables.$font-size-csr-xl;
+    }
+  }
+}

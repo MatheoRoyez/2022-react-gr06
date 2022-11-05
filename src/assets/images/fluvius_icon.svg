@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-app_icon">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="app_icon" clip-path="url(#clip-app_icon)">
+    <g id="Rectangle_124" data-name="Rectangle 124" fill="#004c69" stroke="#707070" stroke-width="1">
+      <rect width="512" height="512" rx="62" stroke="none"/>
+      <rect x="0.5" y="0.5" width="511" height="511" rx="61.5" fill="none"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(146 104)" fill="#b2d235" stroke="#707070" stroke-width="1">
+      <ellipse cx="261.5" cy="237" rx="261.5" ry="237" stroke="none"/>
+      <ellipse cx="261.5" cy="237" rx="261" ry="236.5" fill="none"/>
+    </g>
+  </g>
+</svg>

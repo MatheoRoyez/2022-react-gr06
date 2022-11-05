@@ -1,0 +1,62 @@
+@use "../variables";
+
+.info-card {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  background-color: variables.$white;
+  border-radius: variables.$rounded-corners;
+  transition: all 0.1s ease-out;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: variables.$dark-blue;
+  gap: 10px;
+  padding: 0px variables.$padding-md;
+
+  .info-card-value {
+    font-size: variables.$font-size-ty;
+    
+  }
+}
+
+.info-card-value-infocomplete {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: variables.$lime;
+
+ }
+ .info-card-value-infouncomplete {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: variables.$orange;
+ }
+
+
+
+@media screen and (min-width: variables.$small) {
+}
+
+@media screen and (min-width: variables.$medium) {
+  .info-card {
+    padding: 0px variables.$padding-lg;
+
+    .info-card-value {
+      font-size: variables.$font-size-md;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$large) {
+}
+
+@media screen and (min-width: variables.$extra-large) {
+}
+
+@media screen and (min-width: variables.$two-extra-large) {
+  .info-card {
+    padding: 0px variables.$padding-xl;
+  }
+  
+}
